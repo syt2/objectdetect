@@ -1,0 +1,29 @@
+{
+    "root_train": "/train",
+    "list_train": "mydata/coco_train.txt",
+    "name_file": "mydata/coco_name.txt",
+
+    "load": false,
+    "save": true,
+    "pretrain": true,
+    "freeze_bn": true,
+    "freeze_stages": 1,
+    "epoches": 24,
+
+    "nbatch_train": 8,
+    "nbatch_eval": 8,
+    "device": [0,1],
+    "num_workers": 8,
+    
+    "lr_base": 0.005,
+    "lr_gamma": 0.1,
+    "lr_schedule": [360, 440],
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+
+    "boxarea_th": 32,
+    "grad_clip": 15,
+    
+    "img_scale_min": 0.8,
+    "augmentation": false
+}
